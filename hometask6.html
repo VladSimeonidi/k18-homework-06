@@ -3,130 +3,79 @@
 <head>
 	<meta charset="utf-8">
 	<title>Домашнее задание №6</title>
-	
-	<!-- КОММЕНТАРИЙ!!!!!!!!!!!!!!!!!!! -->
-	
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			font-size: 16px; 
-			width: 1000px;
-			margin-top: 70px;
-			margin-left: 30px;
-			margin-bottom: 65px;
-			}
-		.content-span {
-		background-color: #f0e6d6;
-		margin-left: 5px;
-		margin-right: 5px;
-		}
-		.content-span-kbd {
-		background-color: #eadcea;
-		margin-left: 5px;
-		margin-right: 5px;
-		}
-		.content-span-span {
-		background-color: #eadcdc;
-		margin-left: 5px;
-		margin-right: 5px;
-		}
-		.content-code {
-		text-decoration: underline; color: #61a2ea;
-		}
-		.td {
-		padding-top: 13px;
-		padding-left: 13px;
-		padding-bottom: 13px;
-		border-collapse: collapse; border: 2px solid #b496b4;
-		}
-		h1 {
-		margin-top: 60px;
-		text-transform: uppercase;
-		}
-		dt {
-		font-weight: bold;
-		font-style: italic;
-		line-height: 2;
-		margin-top: 20px;
-		}
-		
-	</style>
+	<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+<div class="content">
 	<h1>Заголовок H1</h1>
 	<h2>Заголовок H2</h2>
-	<h3 style="line-height: 50px;">Заголовок H3</h3>
+	<h3>Заголовок H3</h3>
 	<h4>Заголовок H4</h4>
 	<h5>Заголовок H5</h5>
 	<h6>Заголовок H6</h6>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, explicabo saepe adipisci doloremque deserunt illum incidunt! Culpa possimus, harum a, qui ducimus itaque adipisci ad, officia voluptate, nihil maxime! Cum adipisci, officia perspiciatis ut sequi voluptas praesentium, neque sunt minima.</p>
-<h1>ФОРМАТИРОВАНИЕ ТЕКСТА</h1>
-<p>Краткая демонстрация текстовых тегов/теги. Тег <span class="content-span">&ltp&gt</span> определяет текстовый абзац(создает новый параграф).<br>
+<h2>ФОРМАТИРОВАНИЕ ТЕКСТА</h2>
+<p class="content-p">Краткая демонстрация текстовых тегов/теги. Тег <span>&lt;p&gt;</span> определяет текстовый абзац(создает новый параграф).<br>
 Абзац является блочным тегом, всегда начинается с новой строки и имеет отсуп до и после себя.</p> 
 
-<p>Абзац не позволяет вкладывать внутрь себя такие элементы как к address(информации об авторе), blockquote(блочная<br>
-цитата), table(таблица), а также другие абзаци <span class="content-span"> p &gt p </span>.<br>
+<p class="content-p">Абзац не позволяет вкладывать внутрь себя такие элементы как к address(информации об авторе), blockquote(блочная<br>
+цитата), table(таблица), а также другие абзаци <span> p &gt; p </span>.<br>
 Если вам нужно принудительно перевести строку текста на новую линию,без создания нового абзаца и<br>
-верстикальных отступов между - используйте одинарный тег <span class="content-span">&ltbr/&gt. </span> </p>
+верстикальных отступов между - используйте одинарный тег <span>&lt;br/&gt;. </span> </p>
 
-<p>Вы можете отформатировать текст используя такие теги, как <span class="content-span">&lti&gt / &ltem&gt </span>, чтобы сделать ваш текст наклонным,<br>
-вы также можете использовать <span class="content-span">&ltq&gt </span> - <q lang="ru">строчные цитаты, которые в отличии от блочных, позволяют вложенность внутри<br>
-абзаца,</q> при помощи тегов <span class="content-span">&ltb&gt / &ltstrong&gt </span> - можно обозначить важный текст жирностью шрифта.<br>
-для <u>подчеркивания текста</u> используйте <span class="content-span">&ltu&gt / &ltins&gt </span>,a для <del>перечеркивания</del> - <span class="content-span">&ltdel&gt / &lts&gt </span>,<br> 
-Также можно <mark>выделить нужную часть текста</mark> при помощи тега <span class="content-span">&ltmark&gt </span>.</p>
+<p class="content-p">Вы можете отформатировать текст используя такие теги, как <span>&lt;i&gt; / &lt;em&gt; </span>, чтобы сделать ваш текст наклонным,<br>
+вы также можете использовать <span>&lt;q&gt; </span> - <q lang="ru">строчные цитаты, которые в отличии от блочных, позволяют вложенность внутри<br>
+абзаца,</q> при помощи тегов <span>&lt;b&gt; / &lt;strong&gt; </span> - можно обозначить важный текст жирностью шрифта.<br>
+для <u>подчеркивания текста</u> используйте <span>&lt;u&gt; / &lt;ins&gt; </span>,a для <del>перечеркивания</del> - <span class="content-p">&lt;del&gt; / &lt;s&gt; </span>,<br> 
+Также можно <mark>выделить нужную часть текста</mark> при помощи тега <span>&lt;mark&gt; </span>.</p>
 
-<p>Чтобы превратить ваш текст в гиперссылку, нужно использовать тег &lta&gt. Ссылка должна иметь обязательный<br>
+<p>Чтобы превратить ваш текст в гиперссылку, нужно использовать тег &lt;a&gt;. Ссылка должна иметь обязательный<br>
 атрибут  href="uri"  значение которого должен URI адрес вашей гиперссылки.</p>
 
-<p>Также можно использовать специальные теги <span class="content-span">&ltsup&gt </span> <sup>Отображает шрифт в виде верхнего индекса</sup> и <span class="content-span">&ltsub&gt </span> <sub>Отображает шрифт в виде нижнего индекса.</sub><br> 
-Тег <span class="content-span">&ltsmall&gt </span> <small>уменьшает размер шрифта</small></p>
+<p class="content-p">Также можно использовать специальные теги <span>&lt;sup&gt;</span> <sup>Отображает шрифт в виде верхнего индекса</sup> и <span class="content-span">&lt;sub&gt; </span> <sub>Отображает шрифт в виде нижнего индекса.</sub><br> 
+Тег <span>&lt;small&gt; </span> <small>уменьшает размер шрифта</small></p>
 
-<p>Тег <span class="content-span">&ltcode&gt </span> предназначен для отображения одной или нескольких строк текста, который представляет собой про-<br>
+<p class="content-p">Тег <span>&lt;code&gt; </span> предназначен для отображения одной или нескольких строк текста, который представляет собой про-<br>
 граммный код<br>
 <small>пример:</small><br>
 - чтобы узнать контекст метода нужно вызвать <span class="content-span"><code>console.log(this);</code>.</span></p>
 
-<p>Тег <span class="content-span-kbd">&ltkbd&gt </span> используется для обозначения текста, который набирается на клавиатуре или для названия клавиш,<br>
+<p class="content-kbd">Тег <span>&lt;kbd&gt; </span> используется для обозначения текста, который набирается на клавиатуре или для названия клавиш,<br>
 <small>пример:</small><br>
-чтобы вызвать <i>"Диспетчер задач"</i> нажмите на клавиатуре вместе 3 клавиши - <span class="content-span-kbd"><kbd>Ctrl + Alt + Del</kbd>. </span></p>
+чтобы вызвать <i>"Диспетчер задач"</i> нажмите на клавиатуре вместе 3 клавиши - <span><kbd>Ctrl + Alt + Del</kbd>. </span></p>
 
-<p>Тег <span class="content-span-span">&ltsamp&gt </span> используется для отображения текста, который является результатом вывода компьютерной программы или скрипта,<br>
+<p class="content-code">Тег <span>&lt;samp&gt; </span> используется для отображения текста, который является результатом вывода компьютерной программы или скрипта,<br>
 <small>пример:</small><br>
-<samp>В результате проверки мы определил, <span class="content-span-span">ваш браузер поддерживает JavaScript</samp></span>
-
-<p>Тег <span class="content-span">&ltabbr&gt </span>указывает, что <abbr title="поисковые системы индексируют полнотекстовый вариант сокращения">ПС</abbr> является аббревиатурой. С помощью атрибута title дается расшифровка сокращения,<br>
+<samp>В результате проверки мы определил,<span>ваш браузер поддерживает JavaScript</span></samp>
+<p class="content-p">Тег <span>&lt;abbr&gt; </span>указывает, что <abbr title="поисковые системы индексируют полнотекстовый вариант сокращения">ПС</abbr> является аббревиатурой. С помощью атрибута title дается расшифровка сокращения,<br>
 что позволяет понимать аббревиатуру тем людям, которые с ней не знакомы. Кроме того, поисковые системы индекси-<br>
 руют полнотекстовый вариант сокращения, что может использоваться для повышения рейтинга документа.</p>
 
 <p>Как правило, когда, в документе, упоминается <dfn title="Это новый термин">новый термин</dfn>, он выделяется курсивом и дается его определение. При<br>
-использовании этого термина в дальнейшем, он считается уже известным читателю. Тег &ltdfn&gt применяется для выделе-<br>
+использовании этого термина в дальнейшем, он считается уже известным читателю. Тег &lt;dfn&gt; применяется для выделе-<br>
 ния таких терминов при их первом появлении в тексте. С помощью атрибута title вы можете дать более подробную<br>
 расшифровку термина.<br></p>
 
-<p>Тег <span class="content-span">&ltaddress&gt</span>  предназначен для хранения информации об авторе(НЕ адреса и контакты компании, прочее) и может<br>
+<p class="content-p">Тег <span>&lt;address&gt;</span>  предназначен для хранения информации об авторе(НЕ адреса и контакты компании, прочее) и может<br>
 включать в себя любые элементы HTML вроде ссылок, текста, выделений и т.д.
 
-<!-- КОММЕНТАРИЙ!!!!!!!!!!!!!!!!!! -->
+<blockquote>Тег &lt;blockquote&gt; используется для обозначения цитат, длинных выписок, афоризмов и прочее, который<br>
+создается в новом блоке с пробелами до и после.</blockquote>
 
-<p style="background-color:#eadcdc; border-left-color: #b496b4; border-left-style: solid; border-left-width: 4px; padding-left: 30px; width: 985px; padding-top: 16px; padding-bottom: 16px">Тег &ltblockquote&gt используется для обозначения цитат, длинных выписок, афоризмов и прочее, который<br>
-создается в новом блоке с пробелами до и после.</p>
-
-<div style="background-color: #f0e6d6; font-family: Arial, sans-serif; padding: 10px; width: 1000px; line-height: 1.5">
-<pre> Тег &ltpre&gt определяет блок предварительно форматированного текста.
+<pre> Тег &lt;pre&gt; определяет блок предварительно форматированного текста.
      Такой текст отображается обычно моноширинным шрифтом и со всеми пробелами между словами.
          По умолчанию, любое количество пробелов идущих в коде подряд
-             Тег &ltpre&gt позволяет обойти эту особенность и отображать текст
+             Тег &lt;pre&gt; позволяет обойти эту особенность и отображать текст
                  как требуется разработчику.
 </pre>
-</div>
-<h1>Списки</h1>
+<h2>Списки</h2>
 
-<h3>Маркированный список</h3>
-<ul style="line-height: 1.5em">
-	<li> <span class="content-code">Веб - студия Wezom</span> - Продвижение, создание сайтов, разработка, раскрутка сайта</li>
-	<li> <span class="content-code">Коворкинг - Центр Корова</span> - Аренда офиса, рабочего места в центре Херсона</li>
-	<li> <span class="content-code">100bannerov</span>- Размещение бесплатной баннерной рекламы в интернете</li>
-	<li> <span class="content-code">Wezom.mobile</span> - Разработка и создание мобильных приложений для android и ios устройств в Украине
+<h4>Маркированный список</h4>
+<ul>
+	<li> <a href="12235@gmail.com">Веб - студия Wezom</a> - Продвижение, создание сайтов, разработка, раскрутка сайта</li>
+	<li> <a href="12235@gmail.com">Коворкинг - Центр Корова</a> - Аренда офиса, рабочего места в центре Херсона</li>
+	<li> <a href="12235@gmail.com">100bannerov</a>- Размещение бесплатной баннерной рекламы в интернете</li>
+	<li> <a href="12235@gmail.com">Wezom.mobile</a> - Разработка и создание мобильных приложений для android и ios устройств в Украине
 		<ul>
 			<li> Lorem ipsum dolor sit</li>
 			<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit</li>
@@ -141,16 +90,12 @@
 	</li>
 </ul>
 
-<h3>Нумерованный список</h3>
-
-тег &ltol&gt...&lt/ol&gt устанавливает нумерованный (упорядоченный) список. Каждый тег списка должен начинаться с &ltli&gt...&lt/li&gt .
-
-<p>Если к &ltol&gt применяется таблица стилей, то теги &ltli&gt наследуют эти свойства.</p>
-<ol style="line-height: 1.5em">
-	<li><span class="content-code">Веб - студия Wezom</span> - Продвижение, создание сайтов, разработка, раскрутка сайт</li>
-	<li><span class="content-code">Коворкинг - Центр Корова</span> - Аренда офиса, рабочего места в центре Херсона</li>
-	<li><span class="content-code">100bannerov</span> - Размещение бесплатной баннерной рекламы в интернете</li>
-	<li><span class="content-code">Wezom.mobile</span> - Разработка и создание мобильных приложений для android и ios устройств в Украине
+<h4>Нумерованный список</h4>
+<ol>
+	<li><a href="12235@gmail.com">Веб - студия Wezom</a> - Продвижение, создание сайтов, разработка, раскрутка сайт</li>
+	<li><a href="12235@gmail.com">Коворкинг - Центр Корова</a> - Аренда офиса, рабочего места в центре Херсона</li>
+	<li><a href="12235@gmail.com">100bannerov</a> - Размещение бесплатной баннерной рекламы в интернете</li>
+	<li><a href="12235@gmail.com">Wezom.mobile</a> - Разработка и создание мобильных приложений для android и ios устройств в Украине
 		<ol>
 			<li>- Lorem ipsum dolor sit</li>
 			<li>- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit</li>
@@ -164,12 +109,7 @@
 		</ol>
 	</li>
 </ol>
-<h3>Список определений</h3>	
-
-тег &ltdl&gt...&lt/dl&gt входит в тройку тегов &ltdl&gt, &ltdt&gt, &ltdd&gt , предназначенных для создания списка описаний. Каждый такой список начинается с контейнера &ltdl&gt<br>
-, куда входит тег &ltdt&gt создающий термин и тег &ltdd&gt задающий описание этого термина.
-
-<i>Пример</i>
+<h4>Список определений</h4>	
 <dl>
 	<dt>Что такое Тег?</dt>
 		<dd>Тег — это специальный символ разметки, который применяется для вставки различных тегов на веб-страницу таких как: рисунки, таблицы, ссылки и др., 
@@ -180,29 +120,30 @@
 	<dt>Что такое Сайт?</dt>
 		<dd>Cайт — это набор отдельных веб-страниц, которые связаны между собой ссылками и единым оформлением.</dd>
 </dl>
-<h1>ТАБЛИЦЫ</h1>
-<table style="border-collapse: collapse; width: 1000px; border: 2px solid #b496b4;">
-	<tr style="background-color: #eadcea">
-		<td class="td" style="text-align: center">Заглавие таблицы</td>
-		<td class="td" style="text-align: center">Заглавие таблицы</td>
-		<td class="td" style="text-align: center">Заглавие таблицы</td>
+<h2>ТАБЛИЦЫ</h2>
+<table class="table">
+	<tr>
+		<td class="td-one">Заглавие таблицы</td>
+		<td class="td-one">Заглавие таблицы</td>
+		<td class="td-one">Заглавие таблицы</td>
 	</tr>
 	<tr>
-		<td class="td">Данные вашей таблицы</td>
-		<td class="td">Данные вашей таблицы</td>
-		<td class="td">Данные вашей таблицы</td>
+		<td class="td-two">Данные вашей таблицы</td>
+		<td class="td-two">Данные вашей таблицы</td>
+		<td class="td-two">Данные вашей таблицы</td>
 	</tr>
 	<tr>
-		<td class="td">Данные вашей таблицы</td>
-		<td class="td">Данные вашей таблицы</td>
-		<td class="td">Данные вашей таблицы</td>
+		<td class="td-two">Данные вашей таблицы</td>
+		<td class="td-two">Данные вашей таблицы</td>
+		<td class="td-two">Данные вашей таблицы</td>
 	</tr>
 	<tr>
-		<td class="td">Данные вашей таблицы</td>
-		<td class="td">Данные вашей таблицы</td>
-		<td class="td">Данные вашей таблицы</td>
+		<td class="td-two">Данные вашей таблицы</td>
+		<td class="td-two">Данные вашей таблицы</td>
+		<td class="td-two">Данные вашей таблицы</td>
 	</tr>
 
 </table>
+</div>
 </body>
 </html>
